@@ -43,14 +43,16 @@ Users can **apply promo codes, choose dates, set quantities, make payments, and 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/experience-booking.git
-cd experience-booking
+git clone https://github.com/Harsh-2006-git/Highway_Delite.git
+cd Backend
+cd Frontend
 ```
 
 ### 2. Install dependencies
 
 ```bash
-npm install
+npm install (/Frontend)
+npm install (/Backend}
 ```
 
 ### 3. Configure environment variables
@@ -59,7 +61,11 @@ Create a `.env` file in the root directory:
 
 ```env
 PORT=3001
-DATABASE_URL=postgres://username:password@hostname:port/databasename
+DB_USER
+DB_PASSWORD
+DB_HOST
+DB_PORT
+DB_NAME
 ```
 
 ### 4. Run the server
@@ -83,7 +89,7 @@ You can automatically seed demo experiences and promo codes on startup.
 To manually seed:
 
 ```bash
-node src/seed.js
+node seed.js
 ```
 
 Sample listings include adventures like:
