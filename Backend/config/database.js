@@ -3,9 +3,9 @@ dotenv.config();
 import { Sequelize } from "sequelize";
 
 const sequelize = new Sequelize(
-  process.env.DB_NAME, // defaultdb
-  process.env.DB_USER, // avnadmin
-  process.env.DB_PASSWORD, // AVNS_22YIvQEWS9-Be-0GPKs
+  process.env.DB_NAME,
+  process.env.DB_USER,
+  process.env.DB_PASSWORD,
   {
     host: process.env.DB_HOST,
     port: Number(process.env.DB_PORT),
@@ -14,7 +14,7 @@ const sequelize = new Sequelize(
     dialectOptions: {
       ssl: {
         require: true,
-        rejectUnauthorized: false, // allow self-signed certs
+        rejectUnauthorized: false,
       },
     },
     pool: {
