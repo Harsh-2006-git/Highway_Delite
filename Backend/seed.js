@@ -265,5 +265,6 @@ const seedDatabase = async () => {
   }
 };
 
-// Run the seeder
-export default seedDatabase();
+export default seedDatabase;
+
+
