@@ -9,7 +9,7 @@ import PromocodeRoutes from "./routes/promoRoutes.js";
 import helmet from "helmet";
 import cors from "cors";
 import path from "path";
-import seedDatabase from "./seed.js";
+
 
 dotenv.config();
 
@@ -66,8 +66,8 @@ const startServer = async () => {
     // Connect to database
     await connectDB();
 
-    await sequelize.sync({ alter: true });
-    await seedDatabase();
+    await sequelize.sync();
+  
     //await sequelize.sync({ force: true });
 
     // Start server
